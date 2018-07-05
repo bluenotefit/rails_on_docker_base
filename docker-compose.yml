@@ -1,0 +1,13 @@
+version: '2'
+services:
+  app:
+    build: ./docker/app #Dokerfileパス
+    image: rails_app # イメージ名
+    container_name: "rails_base_app"
+#   build: ./db/
+#     image: rails_db
+#     container_name: "rails_base_db"
+#  ci:
+#   build: ./ci/
+#     image: rails_ci
+#     container_name: "rails_base_ci"
